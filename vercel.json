@@ -1,23 +1,12 @@
-
-{
-  "version": 2,
-  "cleanUrls": true,
-  "trailingSlash": false,
+{"version": 2,
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "env": {
+    "VITE_API_KEY": "@vite_api_key"
+  },
   "rewrites": [
     {
       "source": "/(.*)",
       "destination": "/index.html"
     }
-  ],
-  "headers": [
-    {
-      "source": "/(.*).tsx",
-      "headers": [
-        {
-          "key": "Content-Type",
-          "value": "text/javascript"
-        }
-      ]
-    }
-  ]
-}
+  ]}
